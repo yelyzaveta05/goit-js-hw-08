@@ -5,6 +5,7 @@ import SimpleLightbox from "simplelightbox";
 
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+
 const galleryEl = document.querySelector('.gallery');
 galleryEl.innerHTML = createGallery(galleryItems);
 
@@ -16,9 +17,10 @@ function createGallery(array) {
     }).join('');
 };
 
-const simpleLightBox = new SimpleLightbox('.gallery a', {
+new SimpleLightbox('.gallery a', {
     captionsData: "alt",
     captionDelay: 250,
 });
 
 console.log(galleryItems);
+
